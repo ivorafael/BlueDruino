@@ -23,7 +23,6 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 	Button btnLed1, btnLed2, btnLed3, btnLed4;
-//	TextView txtBtStatus, txtMessage;
 	TextView txtMessage;
 
 	private static final String TAG = "bluetooth1";
@@ -49,30 +48,6 @@ public class MainActivity extends Activity {
 		btnLed3 = (Button) findViewById(R.id.buttonLed3);
 		btnLed4 = (Button) findViewById(R.id.buttonLed4);
 		txtMessage = (TextView) findViewById(R.id.textView1);
-//		txtMessage = (TextView) findViewById(R.id.textView2);
-
-		// btAdapter = BluetoothAdapter.getDefaultAdapter();
-		//
-		// Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
-		// if (pairedDevices == null || pairedDevices.size() == 0) {
-		// txtMessage.setText("No paired devices..");
-		// } else {
-		//
-		// for (BluetoothDevice bluetoothDevice : pairedDevices) {
-		// if (bluetoothDevice.getName().equalsIgnoreCase("linvor")) {
-		// this.btDevice = bluetoothDevice;
-		//
-		// txtMessage.setText("Paired with: " + this.btDevice.getName() + " (" + this.btDevice.getAddress() + ")");
-		// this.btAddress = this.btDevice.getAddress();
-		//
-		// if ( this.btDevice.getUuids() != null && this.btDevice.getUuids().length > 0 ) {
-		// this.MY_UUID = this.btDevice.getUuids()[0].getUuid();
-		// }
-		//
-		// }
-		// }
-		//
-		// }
 
 		this.updateBluetoothDeviceAddress();
 
@@ -87,21 +62,18 @@ public class MainActivity extends Activity {
 		btnLed2.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				sendData("1");
-//				Toast.makeText(getBaseContext(), "Turn off LED", Toast.LENGTH_SHORT).show();
 			}
 		});
 
 		btnLed3.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				sendData("0");
-//				Toast.makeText(getBaseContext(), "Turn LED blinking", Toast.LENGTH_SHORT).show();
 			}
 		});
 
 		btnLed4.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				sendData("b");
-//				Toast.makeText(getBaseContext(), "Turn LED blinking", Toast.LENGTH_SHORT).show();
 			}
 		});		
 		
