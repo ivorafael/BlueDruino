@@ -2,7 +2,7 @@
 
 Experimento para conectar Android e Arduino via Bluetooth.
 
-Mais detalhes em: http://codeinfected.com/blog
+Mais detalhes em: http://codeinfected.com/blog/2013/07/bluedruino-android-e-arduino/
 
 
 
