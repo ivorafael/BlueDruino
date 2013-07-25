@@ -1,0 +1,29 @@
+#
+# From: 
+# http://blog.mitemitreski.com/2012/06/git-ignore-for-javajvm-projects.html#.UdV0-vaG37Y
+#
+
+*target*
+*.jar
+!commons*.jar
+!org.json-1.0.jar
+!urlrewrite-3.2.0.jar
+*.war
+*.ear
+*.class
+
+
+**/*.DS_Store
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+
+bluedruino_keystore
+
